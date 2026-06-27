@@ -1,10 +1,17 @@
 import { Phone, Instagram } from "lucide-react";
+import { motion } from "framer-motion";
 import logoAsset from "@/assets/automify-logo.png.asset.json";
 
 export default function Footer() {
   return (
     <footer className="border-t border-border/40 bg-background py-12">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-5 text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-40px" }}
+        transition={{ duration: 0.5 }}
+        className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-5 text-center"
+      >
         <div className="flex items-center gap-2">
           <img src={logoAsset.url} alt="Automify" className="h-8 w-auto" />
           <span className="font-display text-sm font-extrabold tracking-widest text-foreground">AUTOMIFY</span>
@@ -18,7 +25,7 @@ export default function Footer() {
           </span>
         </div>
         <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} Automify. Lagos, Nigeria.</p>
-      </div>
+      </motion.div>
     </footer>
   );
 }
