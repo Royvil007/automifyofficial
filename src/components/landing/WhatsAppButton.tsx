@@ -38,8 +38,8 @@ export default function WhatsAppButton({ children = "Message Us on WhatsApp", si
       whileTap={{ scale: 0.97 }}
       whileHover={{ scale: 1.02 }}
       className={cn(
-        "inline-flex items-center justify-center gap-2 rounded-full bg-gradient-gold font-display font-extrabold uppercase tracking-wide text-primary-foreground transition-shadow",
-        glow && "shadow-gold animate-[pulse_3s_ease-in-out_infinite]",
+        "inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp font-display font-extrabold uppercase tracking-wide text-whatsapp-foreground shadow-[0_8px_28px_-8px_hsl(142_70%_49%/0.6)] transition-all hover:bg-[hsl(142_72%_44%)] hover:shadow-[0_14px_40px_-10px_hsl(142_70%_49%/0.75)]",
+        glow && "animate-[pulse_3s_ease-in-out_infinite]",
         sizes[size],
         className,
       )}
