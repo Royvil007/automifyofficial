@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroVisual from "@/assets/hero-visual.jpg";
+import heroVisual from "@/assets/hero-property.jpg";
 import WhatsAppButton from "./WhatsAppButton";
 
 export default function Hero() {
@@ -16,9 +16,9 @@ export default function Hero() {
           <p className="mb-5 inline-block rounded-full border border-gold/40 px-4 py-1 font-display text-[11px] font-bold uppercase tracking-[0.25em] text-gold">
             AI Employees. Real Results.
           </p>
-          <h1 className="font-display text-[44px] font-black leading-[0.95] text-foreground sm:text-6xl md:text-7xl">
-            HIRE AI.<br />
-            <span className="bg-gradient-gold bg-clip-text text-transparent">CLOSE MORE DEALS.</span>
+          <h1 className="font-display text-[40px] font-black leading-[1.02] text-foreground sm:text-5xl md:text-6xl">
+            SCALE YOUR REAL ESTATE BUSINESS{" "}
+            <span className="bg-gradient-gold bg-clip-text text-transparent">WITH AI.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
             AI Employees that answer every enquiry, follow up on cold leads, and book viewings — so no commission slips through a missed reply.
@@ -29,19 +29,21 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.2 }}
-          className="relative mx-auto mt-12 max-w-md"
+          className="relative mx-auto mt-12 max-w-xl"
         >
-          <div className="absolute inset-0 -z-10 rounded-full bg-gradient-radial-gold blur-2xl" />
-          <img
-            src={heroVisual}
-            alt="Automify AI network visual"
-            width={1024}
-            height={1024}
-            className="mx-auto w-full max-w-sm opacity-90 mix-blend-screen"
-          />
+          <div className="absolute -inset-4 -z-10 rounded-3xl bg-gradient-radial-gold opacity-60 blur-2xl" />
+          <div className="overflow-hidden rounded-2xl border border-gold/30 shadow-gold">
+            <img
+              src={heroVisual}
+              alt="Modern Lagos real estate property at golden hour"
+              width={1024}
+              height={1024}
+              className="h-auto w-full object-cover"
+            />
+          </div>
         </motion.div>
       </div>
     </section>
