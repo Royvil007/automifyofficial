@@ -27,7 +27,8 @@ export default function AIEmployees() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.45, delay: i * 0.05 }}
-              className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 transition-colors hover:border-gold/60"
+              whileHover={{ y: -6 }}
+              className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 transition-all hover:border-gold/60 hover:shadow-gold"
             >
               <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-gold/5 blur-2xl transition-opacity group-hover:bg-gold/10" />
               <div className="relative">
