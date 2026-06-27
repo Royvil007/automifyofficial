@@ -22,7 +22,8 @@ export default function Problem() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="flex items-start gap-4 rounded-2xl border border-border/60 bg-card p-5"
+              whileHover={{ y: -4 }}
+              className="group flex items-start gap-4 rounded-2xl border border-border/60 bg-card p-5 transition-all hover:border-gold/60 hover:shadow-gold"
             >
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-gold/40 bg-gold/10">
                 <Icon className="h-5 w-5 text-gold" strokeWidth={2} />
