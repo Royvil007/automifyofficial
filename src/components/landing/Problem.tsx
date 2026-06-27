@@ -11,9 +11,15 @@ export default function Problem() {
   return (
     <section className="border-t border-border/40 bg-secondary/30 py-20">
       <div className="mx-auto max-w-6xl px-5">
-        <h2 className="mx-auto max-w-2xl text-center font-display text-3xl font-black uppercase leading-tight text-foreground sm:text-4xl md:text-5xl">
+        <motion.h2
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.55 }}
+          className="mx-auto max-w-2xl text-center font-display text-3xl font-black uppercase leading-tight text-foreground sm:text-4xl md:text-5xl"
+        >
           Every missed reply is a <span className="text-gold">commission</span> walking out the door.
-        </h2>
+        </motion.h2>
         <div className="mx-auto mt-12 grid max-w-3xl gap-4">
           {pains.map(({ icon: Icon, text }, i) => (
             <motion.div
