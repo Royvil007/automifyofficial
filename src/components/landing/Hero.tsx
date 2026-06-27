@@ -1,8 +1,13 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import heroVisual from "@/assets/hero-property.jpg";
 import WhatsAppButton from "./WhatsAppButton";
 
 export default function Hero() {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
+  const y = useTransform(scrollYProgress, [0, 1], [0, 80]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.08]);
   return (
     <section id="top" className="relative overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-gradient-radial-gold opacity-70" />
@@ -29,6 +34,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
+          ref={ref}
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.2 }}
@@ -36,12 +42,13 @@ export default function Hero() {
         >
           <div className="absolute -inset-4 -z-10 rounded-3xl bg-gradient-radial-gold opacity-60 blur-2xl" />
           <div className="overflow-hidden rounded-2xl border border-gold/30 shadow-gold">
-            <img
+            <motion.img
+              style={{ y, scale }}
               src={heroVisual}
               alt="Modern Lagos real estate property at golden hour"
               width={1024}
               height={1024}
-              className="h-auto w-full object-cover"
+              className="h-auto w-full object-cover will-change-transform"
             />
           </div>
         </motion.div>

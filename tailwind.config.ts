@@ -34,6 +34,10 @@ export default {
           DEFAULT: "hsl(var(--gold))",
           soft: "hsl(var(--gold-soft))",
         },
+        whatsapp: {
+          DEFAULT: "hsl(var(--whatsapp))",
+          foreground: "hsl(var(--whatsapp-foreground))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
