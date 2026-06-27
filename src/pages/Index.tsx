@@ -6,6 +6,7 @@ import AIEmployees from "@/components/landing/AIEmployees";
 import WhyAutomify from "@/components/landing/WhyAutomify";
 import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
+import FloatingWhatsApp from "@/components/landing/FloatingWhatsApp";
 
 const Index = () => (
   <div className="min-h-screen bg-background text-foreground">
@@ -19,6 +20,7 @@ const Index = () => (
       <FinalCTA />
     </main>
     <Footer />
+    <FloatingWhatsApp />
   </div>
 );
 
