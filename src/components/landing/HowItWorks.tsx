@@ -2,7 +2,7 @@ import { Inbox, Bot, CalendarCheck, Trophy } from "lucide-react";
 import { motion } from "framer-motion";
 
 const steps = [
-  { icon: Inbox, label: "New Lead" },
+  { icon: Inbox, label: "New Client" },
   { icon: Bot, label: "AI Follow-Up" },
   { icon: CalendarCheck, label: "Viewing Booked" },
   { icon: Trophy, label: "Deal Closed" },

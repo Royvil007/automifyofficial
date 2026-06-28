@@ -43,7 +43,7 @@ export default function Hero() {
             className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/85 md:text-lg animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            AI Employees that answer every enquiry, follow up on cold leads, and book viewings — so no commission slips through a missed reply.
+            AI Employees that answer every enquiry, follow up on clients who've gone quiet, and book viewings — so no commission slips through a missed reply.
           </p>
           <div
             className="mt-8 flex justify-center animate-fade-up"
