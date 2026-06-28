@@ -2,6 +2,7 @@ import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import Problem from "@/components/landing/Problem";
 import HowItWorks from "@/components/landing/HowItWorks";
+import Gallery from "@/components/landing/Gallery";
 import AIEmployees from "@/components/landing/AIEmployees";
 import WhyAutomify from "@/components/landing/WhyAutomify";
 import FinalCTA from "@/components/landing/FinalCTA";
@@ -15,6 +16,7 @@ const Index = () => (
       <Hero />
       <Problem />
       <HowItWorks />
+      <Gallery />
       <AIEmployees />
       <WhyAutomify />
       <FinalCTA />
