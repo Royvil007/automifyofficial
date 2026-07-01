@@ -15,9 +15,9 @@ export default function Problem() {
         src={bgImage}
         alt=""
         aria-hidden
-        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.10]"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.18]"
       />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/85 via-background/80 to-background/95" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/70 via-background/65 to-background/85" />
       <div className="relative mx-auto max-w-6xl px-5">
         <motion.h2
           initial={{ opacity: 0, y: 16 }}

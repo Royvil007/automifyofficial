@@ -1,5 +1,6 @@
 import { Inbox, Bot, CalendarCheck, Trophy } from "lucide-react";
 import { motion } from "framer-motion";
+import bgImage from "@/assets/gallery-exterior.jpg";
 
 const steps = [
   { icon: Inbox, label: "New Client" },
@@ -10,8 +11,15 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-20">
-      <div className="mx-auto max-w-6xl px-5">
+    <section className="relative overflow-hidden py-20">
+      <img
+        src={bgImage}
+        alt=""
+        aria-hidden
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.18]"
+      />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/70 via-background/65 to-background/85" />
+      <div className="relative mx-auto max-w-6xl px-5">
         <div className="text-center">
           <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-gold">How it works</p>
           <h2 className="mt-3 font-display text-3xl font-black uppercase leading-tight sm:text-4xl md:text-5xl">

@@ -1,9 +1,17 @@
 import WhatsAppButton from "./WhatsAppButton";
 import { motion } from "framer-motion";
+import bgImage from "@/assets/gallery-interior.jpg";
 
 export default function FinalCTA() {
   return (
     <section className="relative overflow-hidden border-t border-border/40 py-24">
+      <img
+        src={bgImage}
+        alt=""
+        aria-hidden
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.18]"
+      />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/70 via-background/65 to-background/85" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-radial-gold opacity-80" />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
