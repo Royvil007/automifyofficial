@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const steps = [
   { icon: Inbox, label: "New Client" },
   { icon: Bot, label: "AI Follow-Up" },
-  { icon: CalendarCheck, label: "Viewing Booked" },
+  { icon: CalendarCheck, label: "Inspection Booked" },
   { icon: Trophy, label: "Deal Closed" },
 ];
 

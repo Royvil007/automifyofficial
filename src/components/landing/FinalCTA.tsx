@@ -33,6 +33,15 @@ export default function FinalCTA() {
         >
           <WhatsAppButton glow>Message Us Now</WhatsAppButton>
         </motion.div>
+        <motion.p
+          initial={{ opacity: 0, y: 8 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-6 text-sm text-muted-foreground"
+        >
+          Packages start from <span className="font-semibold text-gold">₦175,000</span> — full 5-Employee AI system, tailored to your business.
+        </motion.p>
       </motion.div>
     </section>
   );

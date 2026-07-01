@@ -1,12 +1,23 @@
 import heroVisual from "@/assets/hero-property.jpg";
 import WhatsAppButton from "./WhatsAppButton";
-import { Bot, MapPin, MessageCircle, ShieldCheck } from "lucide-react";
+import { TrendingUp, Clock, Wallet } from "lucide-react";
 
-const TRUST = [
-  { icon: Bot, label: "Full 5-Employee AI System" },
-  { icon: MapPin, label: "Built for Nigerian Real Estate" },
-  { icon: MessageCircle, label: "WhatsApp-Native" },
-  { icon: ShieldCheck, label: "Lagos, Nigeria" },
+const PILLARS = [
+  {
+    icon: TrendingUp,
+    title: "More Money",
+    body: "Every enquiry answered, every quiet client reopened, no commission lost to a missed reply.",
+  },
+  {
+    icon: Clock,
+    title: "Save Time",
+    body: "No more manually replying on WhatsApp or chasing old contacts yourself.",
+  },
+  {
+    icon: Wallet,
+    title: "Save Money",
+    body: "One AI system instead of separately hiring a receptionist, a follow-up assistant, and a marketing person.",
+  },
 ];
 
 export default function Hero() {
@@ -43,7 +54,7 @@ export default function Hero() {
             className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/85 md:text-lg animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            AI Employees that answer every enquiry, follow up on clients who've gone quiet, and book viewings — so no commission slips through a missed reply.
+            AI Employees that answer every enquiry, follow up on clients who've gone quiet, and book inspections — so no commission slips through a missed reply.
           </p>
           <div
             className="mt-8 flex justify-center animate-fade-up"
@@ -54,15 +65,18 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Trust strip */}
+      {/* Core pillars */}
       <div className="border-y border-gold/20 bg-background/80 backdrop-blur-sm">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 px-5 py-5 sm:grid-cols-4 sm:gap-6">
-          {TRUST.map(({ icon: Icon, label }) => (
-            <div key={label} className="flex items-center justify-center gap-2 text-center">
-              <Icon className="h-4 w-4 shrink-0 text-gold" />
-              <span className="font-display text-[11px] font-bold uppercase tracking-[0.15em] text-muted-foreground sm:text-xs">
-                {label}
-              </span>
+        <div className="mx-auto grid max-w-6xl gap-6 px-5 py-10 sm:grid-cols-3 sm:gap-8">
+          {PILLARS.map(({ icon: Icon, title, body }) => (
+            <div key={title} className="flex flex-col items-center gap-3 text-center sm:items-start sm:text-left">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-gold/40 bg-gold/10">
+                <Icon className="h-5 w-5 text-gold" strokeWidth={2} />
+              </div>
+              <h3 className="font-display text-base font-extrabold uppercase tracking-wide text-foreground">
+                {title}
+              </h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">{body}</p>
             </div>
           ))}
         </div>

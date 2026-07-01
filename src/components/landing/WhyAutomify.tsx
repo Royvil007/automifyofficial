@@ -1,15 +1,23 @@
 import { CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
+import bgImage from "@/assets/gallery-exterior.jpg";
 
 const points = [
   "A full AI system — not a single chatbot stitched onto your DMs.",
   "Built specifically for Nigerian real estate businesses.",
-  "Trained on how enquiries, viewings, and commissions actually flow here.",
+  "Trained on how enquiries, inspections, and commissions actually flow here.",
 ];
 
 export default function WhyAutomify() {
   return (
     <section className="relative overflow-hidden py-20">
+      <img
+        src={bgImage}
+        alt=""
+        aria-hidden
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.10]"
+      />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/85 via-background/80 to-background/95" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-radial-gold opacity-40" />
       <div className="relative mx-auto max-w-3xl px-5 text-center">
         <motion.p
