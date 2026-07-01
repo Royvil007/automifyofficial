@@ -1,16 +1,24 @@
 import { PhoneOff, Clock, Timer } from "lucide-react";
 import { motion } from "framer-motion";
+import bgImage from "@/assets/gallery-interior.jpg";
 
 const pains = [
-  { icon: PhoneOff, text: "Missed calls during a viewing = a lost commission." },
+  { icon: PhoneOff, text: "Missed calls during an inspection = a lost commission." },
   { icon: Clock, text: "Most agents never follow up on enquiries older than a few weeks — yet many of those buyers are ready to move now." },
   { icon: Timer, text: "Slow replies lose deals faster than weak listings do." },
 ];
 
 export default function Problem() {
   return (
-    <section className="border-t border-border/40 bg-secondary/30 py-20">
-      <div className="mx-auto max-w-6xl px-5">
+    <section className="relative overflow-hidden border-t border-border/40 bg-secondary/30 py-20">
+      <img
+        src={bgImage}
+        alt=""
+        aria-hidden
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.10]"
+      />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/85 via-background/80 to-background/95" />
+      <div className="relative mx-auto max-w-6xl px-5">
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
