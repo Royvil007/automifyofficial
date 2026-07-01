@@ -2,7 +2,7 @@ import { Headset, MessageSquare, RefreshCw, Star, Megaphone } from "lucide-react
 import { motion } from "framer-motion";
 
 const employees = [
-  { icon: Headset, role: "AI Front Desk Officer", line: "Never misses a call, even mid-viewing." },
+  { icon: Headset, role: "AI Front Desk Officer", line: "Never misses a call, even mid-inspection." },
   { icon: MessageSquare, role: "AI Enquiry Officer", line: "Replies to every property enquiry instantly." },
   { icon: RefreshCw, role: "AI Customer Renewal Officer", line: "Reopens old enquiries who are ready to buy now." },
   { icon: Star, role: "AI Customer Satisfaction Officer", line: "Gets reviews & referrals after every closed deal." },
