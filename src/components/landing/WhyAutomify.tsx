@@ -15,9 +15,9 @@ export default function WhyAutomify() {
         src={bgImage}
         alt=""
         aria-hidden
-        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.18]"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
       />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/70 via-background/65 to-background/85" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-hero-overlay-top" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-radial-gold opacity-40" />
       <div className="relative mx-auto max-w-3xl px-5 text-center">
         <motion.p
@@ -25,7 +25,7 @@ export default function WhyAutomify() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.45 }}
-          className="font-display text-xs font-bold uppercase tracking-[0.25em] text-gold"
+          className="font-display text-xs font-bold uppercase tracking-[0.25em] text-gold drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]"
         >
           Why Automify
         </motion.p>
@@ -34,7 +34,7 @@ export default function WhyAutomify() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.55, delay: 0.05 }}
-          className="mt-3 font-display text-3xl font-black uppercase leading-tight sm:text-4xl md:text-5xl"
+          className="mt-3 font-display text-3xl font-black uppercase leading-tight drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] sm:text-4xl md:text-5xl"
         >
           Built for Nigerian agents. Not borrowed from somewhere else.
         </motion.h2>

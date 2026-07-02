@@ -15,16 +15,16 @@ export default function Problem() {
         src={bgImage}
         alt=""
         aria-hidden
-        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.18]"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
       />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/70 via-background/65 to-background/85" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-hero-overlay-top" />
       <div className="relative mx-auto max-w-6xl px-5">
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.55 }}
-          className="mx-auto max-w-2xl text-center font-display text-3xl font-black uppercase leading-tight text-foreground sm:text-4xl md:text-5xl"
+          className="mx-auto max-w-2xl text-center font-display text-3xl font-black uppercase leading-tight text-foreground drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] sm:text-4xl md:text-5xl"
         >
           Every missed reply is a <span className="text-gold">commission</span> walking out the door.
         </motion.h2>

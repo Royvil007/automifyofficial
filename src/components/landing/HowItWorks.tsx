@@ -16,13 +16,13 @@ export default function HowItWorks() {
         src={bgImage}
         alt=""
         aria-hidden
-        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.18]"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
       />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/70 via-background/65 to-background/85" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-hero-overlay-top" />
       <div className="relative mx-auto max-w-6xl px-5">
         <div className="text-center">
-          <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-gold">How it works</p>
-          <h2 className="mt-3 font-display text-3xl font-black uppercase leading-tight sm:text-4xl md:text-5xl">
+          <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-gold drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]">How it works</p>
+          <h2 className="mt-3 font-display text-3xl font-black uppercase leading-tight drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] sm:text-4xl md:text-5xl">
             From enquiry to closed deal — on autopilot.
           </h2>
         </div>

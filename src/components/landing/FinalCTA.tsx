@@ -9,9 +9,9 @@ export default function FinalCTA() {
         src={bgImage}
         alt=""
         aria-hidden
-        className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.18]"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
       />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/70 via-background/65 to-background/85" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-hero-overlay-top" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-radial-gold opacity-80" />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -20,7 +20,7 @@ export default function FinalCTA() {
         transition={{ duration: 0.6 }}
         className="relative mx-auto max-w-3xl px-5 text-center"
       >
-        <h2 className="font-display text-4xl font-black uppercase leading-[0.95] sm:text-5xl md:text-6xl">
+        <h2 className="font-display text-4xl font-black uppercase leading-[0.95] drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] sm:text-5xl md:text-6xl">
           Stop losing clients to <span className="bg-gradient-gold bg-clip-text text-transparent">slow replies.</span>
         </h2>
         <motion.p
@@ -28,7 +28,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mx-auto mt-5 max-w-md text-lg text-muted-foreground"
+          className="mx-auto mt-5 max-w-md text-lg text-white/85 drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]"
         >
           Message us now. Get your AI Employees working before the next enquiry hits.
         </motion.p>
@@ -46,7 +46,7 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-6 text-sm text-muted-foreground"
+          className="mt-6 text-sm text-white/80 drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]"
         >
           Packages start from <span className="font-semibold text-gold">₦175,000</span> — full 5-Employee AI system, tailored to your business.
         </motion.p>
