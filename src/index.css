@@ -138,6 +138,15 @@ All colors MUST be HSL.
     );
   }
 
+  .bg-gradient-hero-overlay-top {
+    background-image: linear-gradient(
+      0deg,
+      hsl(0 0% 7% / 0.35) 0%,
+      hsl(0 0% 7% / 0.55) 45%,
+      hsl(0 0% 7% / 0.92) 100%
+    );
+  }
+
   .animate-fade-up {
     animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
