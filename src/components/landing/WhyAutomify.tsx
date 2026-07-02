@@ -36,7 +36,7 @@ export default function WhyAutomify() {
           transition={{ duration: 0.55, delay: 0.05 }}
           className="mt-3 font-display text-3xl font-black uppercase leading-tight drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] sm:text-4xl md:text-5xl"
         >
-          Built for Nigerian agents. Not borrowed from somewhere else.
+          Built for Nigerian agents. Designed around how you actually work.
         </motion.h2>
         <ul className="mx-auto mt-10 grid max-w-xl gap-3 text-left">
           {points.map((p, i) => (
