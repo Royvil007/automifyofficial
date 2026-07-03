@@ -4,10 +4,10 @@ import bgImage from "@/assets/gallery-viewing.jpg";
 
 const employees = [
   { icon: Headset, role: "AI Front Desk Officer", line: "Never misses a call, even mid-inspection." },
-  { icon: MessageSquare, role: "AI Enquiry Officer", line: "Replies to every property enquiry instantly." },
+  { icon: MessageSquare, role: "AI Enquiry Officer", line: "Replies to every enquiry instantly — before they go cold." },
   { icon: RefreshCw, role: "AI Customer Renewal Officer", line: "Reopens old enquiries who are ready to buy now." },
-  { icon: Star, role: "AI Customer Satisfaction Officer", line: "Gets reviews & referrals after every closed deal." },
-  { icon: Megaphone, role: "AI Marketing Officer", line: "Runs your ads and follows up on every click." },
+  { icon: Star, role: "AI Customer Satisfaction Officer", line: "Gets reviews & referrals — so your next client comes from your last." },
+  { icon: Megaphone, role: "AI Marketing Officer", line: "Runs your ads and follows up on every click — so no naira goes to waste." },
 ];
 
 export default function AIEmployees() {
