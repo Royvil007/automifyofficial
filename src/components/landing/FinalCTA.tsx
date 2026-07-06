@@ -48,7 +48,7 @@ export default function FinalCTA() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-6 text-sm text-white/80 drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]"
         >
-          One-Time Setup — from <span className="font-semibold text-gold">₦175,000</span> for the full 5-Employee AI system.<br /> Plus an ongoing <span className="font-semibold text-gold">AI Operations Plan</span>, scoped to your business.
+          One-Time Setup — from <span className="font-semibold text-gold">₦175,000</span> for the full 5-Employee AI system.<br /> Plus an ongoing <span className="font-semibold text-gold">AI Management Fee</span>, scoped to your business.
         </motion.p>
       </motion.div>
     </section>
