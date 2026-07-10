@@ -1,6 +1,6 @@
 import { Phone, Instagram } from "lucide-react";
 import { motion } from "framer-motion";
-import logoAsset from "@/assets/automify-logo.png.asset.json";
+import automifyLogo from "@/assets/automify-logo.png";
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
         className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-5 text-center"
       >
         <div className="flex items-center gap-2">
-          <img src={logoAsset.url} alt="Automify" className="h-8 w-auto" />
+          <img src={automifyLogo} alt="Automify" className="h-8 w-auto" />
           <span className="font-display text-sm font-extrabold tracking-widest text-foreground">AUTOMIFY</span>
         </div>
         <div className="flex flex-col items-center gap-3 text-sm text-muted-foreground sm:flex-row sm:gap-6">
