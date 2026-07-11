@@ -41,10 +41,14 @@ export default function WhatsAppButton({ children = "Message Us on WhatsApp", si
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={() => {
+      onClick={(e) => {
+        e.preventDefault();
         if (typeof window !== "undefined" && window.fbq) {
           window.fbq("track", "Contact");
         }
+        setTimeout(() => {
+          window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer");
+        }, 150);
       }}
       whileTap={{ scale: 0.97 }}
       whileHover={{ scale: 1.02 }}
