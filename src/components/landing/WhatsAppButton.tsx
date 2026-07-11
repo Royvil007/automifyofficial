@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+declare global {
+  interface Window {
+    fbq?: (...args: any[]) => void;
+  }
+}
+
 export const WHATSAPP_URL =
   "https://wa.me/2347014216565?text=Hi%2C%20I%27m%20interested%20in%20getting%20an%20AI%20assistant%20for%20my%20real%20estate%20business";
 
@@ -35,6 +41,11 @@ export default function WhatsAppButton({ children = "Message Us on WhatsApp", si
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => {
+        if (typeof window !== "undefined" && window.fbq) {
+          window.fbq("track", "Contact");
+        }
+      }}
       whileTap={{ scale: 0.97 }}
       whileHover={{ scale: 1.02 }}
       className={cn(
