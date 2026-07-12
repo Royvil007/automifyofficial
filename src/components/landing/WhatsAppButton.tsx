@@ -8,7 +8,7 @@ declare global {
 }
 
 export const WHATSAPP_URL =
-  "https://wa.me/2347014216565?text=Hi%2C%20I%27m%20interested%20in%20getting%20an%20AI%20assistant%20for%20my%20real%20estate%20business";
+  "https://wa.me/2347014216565?text=Hi%2C%20I%27ll%20like%20to%20get%20an%20AI%20Employee%20for%20my%20Real%20Estate%20Business";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
