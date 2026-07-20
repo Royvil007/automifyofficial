@@ -1,13 +1,14 @@
-import { Headset, MessageSquare, RefreshCw, Star, Megaphone } from "lucide-react";
+import { Headset, Megaphone, CalendarCheck, Home, Wallet, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import bgImage from "@/assets/gallery-viewing.jpg";
 
 const employees = [
-  { icon: Headset, role: "AI Front Desk Officer", line: "Responds within 10 seconds — even mid-inspection." },
-  { icon: MessageSquare, role: "AI Enquiry Officer", line: "Replies to every enquiry instantly — before they go cold." },
-  { icon: RefreshCw, role: "AI Customer Renewal Officer", line: "Reopens old enquiries who are ready to buy now." },
-  { icon: Star, role: "AI Customer Satisfaction Officer", line: "Gets reviews & referrals — so your next client comes from your last." },
-  { icon: Megaphone, role: "AI Marketing Officer", line: "Runs your ads and follows up on every click — so no naira goes to waste." },
+  { icon: Megaphone, role: "AI Property Marketing Officer", line: "Runs your ads and feeds every enquiry straight to Reception." },
+  { icon: Headset, role: "AI Receptionist", line: "Answers every call and message instantly — even mid-inspection." },
+  { icon: CalendarCheck, role: "AI Inspection Officer", line: "Books the inspection the moment a client's ready, no back-and-forth." },
+  { icon: Home, role: "AI Property Match Officer", line: "Remembers what a client wanted — and matches them the moment it's listed." },
+  { icon: Wallet, role: "AI Installment Officer", line: "Tracks every payment plan and flags a missed installment before it becomes a default." },
+  { icon: Users, role: "AI Referral Officer", line: "Turns every closed deal into your next client." },
 ];
 
 export default function AIEmployees() {
@@ -24,10 +25,10 @@ export default function AIEmployees() {
         <div className="text-center">
           <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-gold drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)]">Your team</p>
           <h2 className="mt-3 font-display text-3xl font-black uppercase leading-tight drop-shadow-[0_4px_24px_rgba(0,0,0,0.6)] sm:text-4xl md:text-5xl">
-            Meet your 5 <span className="text-gold">AI Employees.</span>
+            Meet your <span className="text-gold">6</span> AI Employees.
           </h2>
         </div>
-        <div className="mx-auto mt-12 grid max-w-4xl gap-4 md:grid-cols-2">
+        <div className="mx-auto mt-12 grid max-w-5xl gap-4 md:grid-cols-2 lg:grid-cols-3">
           {employees.map(({ icon: Icon, role, line }, i) => (
             <motion.div
               key={role}
